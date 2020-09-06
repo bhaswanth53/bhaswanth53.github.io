@@ -12,3 +12,13 @@ $(document).on('click', '.olink', function() {
     }); */
     $('html, body').animate({scrollTop: $(linkTo).offset().top -100 }, 'slow');
 })
+
+$(document).on('click', '.stabs a', function() {
+    event.preventDefault()
+    var tablink = $(this).attr("href")
+    $(".stabs a.uk-active").removeClass("uk-active")
+    $(this).addClass("uk-active")
+
+    $(".skill-section .exp.active").removeClass("active")
+    $(tablink).addClass("active")
+})

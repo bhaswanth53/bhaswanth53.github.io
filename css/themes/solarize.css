@@ -363,17 +363,76 @@ h2 {
 
 .skill-section .skillset .card p {
     font-family: 'PT Mono', monospace;
-    font-size: 20px;
+    font-size: 15px;
     color: rgb(136, 146, 176);
     margin: 0;
     padding: 10px 0px;
 }
-
-.skill-section .skillset .card p i {
+.skill-section .skillset .card .icon {
+    width: 20%;
+    text-align: center;
+}
+.skill-section .skillset .card table {
+    width: 100%;
+}
+.skill-section .skillset .card .name {
+    width: 70%;
+    text-align: left;
+}
+.skill-section .skillset .card .icon i {
     color: #11d9b8;
     margin-right: 10px;
 }
+.skill-section .stabs ul li a {
+    text-transform: none;
+    font-family: 'PT Mono', monospace;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
 
+.skill-section .stabs ul li:not(.uk-active) a {
+    color: rgb(204, 214, 246);
+    border-color: rgb(204, 214, 246);
+}
+
+.skill-section .stabs ul li.uk-active a {
+    color: #11D9B8;
+    border-color: #11D9B8;
+}
+.skill-section .stitle {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 0.5px;
+    color: rgb(204, 214, 246);
+    font-weight: 600;
+    margin: 0;
+}
+.skill-section .sroles {
+    list-style: disc;
+    display: table;
+    margin-top: 5px;
+}
+
+.skill-section .sroles li {
+    color: rgb(136, 146, 176);
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    display: table-row;
+    margin: 0 0 10px 0;
+}
+
+.skill-section .sroles li:before {
+    display: table-cell;
+    content: ' \25CF';
+    color: #11D9B8;
+    padding-right: 15px;
+}
+.skill-section .exp:not(.active) {
+    display: none;
+}
+.skill-section .exp.active {
+    display: block;
+}
 /* End of skill section */
 
 /* About Section */
