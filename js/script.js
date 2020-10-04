@@ -1,6 +1,9 @@
 const loader = document.getElementById('overlay');
 window.addEventListener('load', function() {
     loader.style.display = "none";
+    var modals = ["#mantra1", "#mantra2", "#mantra3"]
+    var modal = modals[Math.floor(Math.random() * modals.length)];
+    UIkit.modal(modal).show();
 });
 
 $(document).on('click', '.olink', function() {
