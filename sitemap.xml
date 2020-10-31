@@ -9,7 +9,23 @@
 
 <url>
   <loc>http://bhaswanth.com/</loc>
-  <lastmod>2020-08-18T14:12:48+00:00</lastmod>
+  <lastmod>2020-10-31T10:53:45+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://bhaswanth.com/blog/</loc>
+  <lastmod>2020-10-31T10:49:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://bhaswanth.com/blog/posts/razzle-react-framework.html</loc>
+  <lastmod>2020-10-31T10:49:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://bhaswanth.com/blog/posts/how-i-created-my-own-php-framework.html</loc>
+  <lastmod>2020-10-31T10:49:46+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
