@@ -25,3 +25,12 @@ $(document).on('click', '.stabs a', function() {
     $(".skill-section .exp.active").removeClass("active")
     $(tablink).addClass("active")
 })
+
+/* $("div.pc-content").slice(0, 6).show();
+$("#loadMore").on("click", function(e){
+    e.preventDefault();
+    $(".pc-content:hidden").slice(0, 6).show();
+    if($(".pc-content:hidden").length == 0) {
+        $("#loadMore").hide();
+    }
+}); */
