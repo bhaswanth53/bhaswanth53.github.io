@@ -1,10 +1,29 @@
 const loader = document.getElementById('overlay');
 window.addEventListener('load', function() {
     loader.style.display = "none";
-    var modals = ["#mantra1", "#mantra2", "#mantra3"]
-    var modal = modals[Math.floor(Math.random() * modals.length)];
-    UIkit.modal(modal).show();
+    displayModal()
 });
+
+var displayModal = () => {
+    var currentDate = new Date()
+    var previousDate = new Date(localStorage.getItem("modal"))
+    var diffMs = (currentDate - previousDate);
+    var diffInMins = Math.round(((diffMs % 86400000) % 3600000) / 60000)
+    if(previousDate !== null) {
+        if(diffInMins >= 30) {
+            var modals = ["#mantra1", "#mantra2", "#mantra3"]
+            var modal = modals[Math.floor(Math.random() * modals.length)];
+            UIkit.modal(modal).show();
+            localStorage.setItem("modal", currentDate)
+        }
+    } else {
+        var modals = ["#mantra1", "#mantra2", "#mantra3"]
+        var modal = modals[Math.floor(Math.random() * modals.length)];
+        UIkit.modal(modal).show();
+        localStorage.setItem("modal", currentDate)
+        console.log("local storage null")
+    }
+}
 
 $(document).on('click', '.olink', function() {
     event.preventDefault()
