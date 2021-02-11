@@ -45,6 +45,14 @@ $(document).on('click', '.stabs a', function() {
     $(tablink).addClass("active")
 })
 
+$(document).on("click", ".exp-a", function() {
+    var div = $(this).attr("data-div")
+    var activeDiv = $(".exp-div.active")
+
+    activeDiv.removeClass('active')
+    $("#"+div).addClass('active')
+})
+
 /* $("div.pc-content").slice(0, 6).show();
 $("#loadMore").on("click", function(e){
     e.preventDefault();

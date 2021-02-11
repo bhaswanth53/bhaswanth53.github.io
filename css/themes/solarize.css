@@ -814,6 +814,28 @@ h2 {
     padding: 0;
 }
 
+.exp-div:not(.active) {
+    display: none;
+}
+.exp-div.active {
+    display: block;
+}
+
+.other-buttons button {
+    background-color: transparent;
+    color: rgb(17, 217, 184);
+    border: 1px solid rgb(17, 217, 184);
+    margin: 7px;
+    font-weight: 600;
+    font-family: 'PT Mono', monospace;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.other-buttons a:hover button {
+    background-color: rgb(17, 217, 184);
+    color: rgba(0, 0, 0, 0.6);
+}
+
 /* End of Freelance Section */
 
 /* Footer */
